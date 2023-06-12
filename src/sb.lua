@@ -225,7 +225,7 @@ function Commands.var(INDEX, a, b, c, d, e, f, g, h)
 end
 
 function Commands.wait(INDEX, a)
-	task.wait(a or 0)
+	__love.timer.sleep(a or 0.001)
 end
 
 function Commands.add(INDEX, a, b, c)
